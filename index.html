@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream House</title>
+    <link rel="stylesheet" href="./project/css/style.css">
+    <link rel="stylesheet" href="./project/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/fontawesome.min.css"
+        integrity="sha512-J2Gce+WmOttffHOrVKLTlzxIalPXUMDbSfn5ADqp8Vj9EngnjNHr+jjiL3ZB8muEzo+K51gU10X+0eGqGNL7QA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Header section starts here -->
+    <header>
+        <div class="header_container">
+            <div class="header_col">
+                <div class="logo_container">
+                    <a href="a">
+                        <img src="./project/Images/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="header_col">
+                <nav class="nav_container" id="navbar">
+                    <ul class="nav_list_container">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contacts</a></li>
+                    </ul>
+                    <button class="menu_close_btn" id="close_menu_btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </nav>
+            </div>
+            <div class="header_col">
+                <button class="quote_btn">Request a Quote</button>
+                <button class="menu_open_btn" id="open_memu_btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+            </div>
+        </div>
+    </header>
+    <!-- Header section ends here -->
+
+    <!-- Hero section starts here -->
+    <section class="hero_section" id="home">
+        <div class="hero_container">
+            <div class="hero_text_container">
+                <h3 class="hero_text">Find A Place Suitable For Comfortable And Peaceful Living</h3>
+                <p class="hero_desc">Discover Properties that suit your lifestyle and budget,whether you're
+                    buying,selling,or renting,we've got the perfect solution for you.Your next home is just a search
+                    away!</p>
+            </div>
+            <div class="search_form_container">
+                <div class="search_type_container">
+                    <div class="search_type_inner">
+                        <button class="search_type_btn active">For Rent</button>
+                        <button class="search_type_btn">For sale</button>
+                    </div>
+                </div>
+                <form action="#" class="search_form">
+                    <fieldset class="search_input_container">
+                        <label for="keywords">keyword</label>
+                        <input type="text" class="search_input" placeholder="keyword" id="keyword">
+                    </fieldset>
+                    <fieldset class="search_input_container">
+                        <label for="propertytype">Property Type</label>
+                        <select name="propertytype" class="search_input" id="propertytype">
+                            <option value="a">Property Type</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Condominium">Condominium</option>
+                            <option value="Townhouse">Townhouse</option>
+                            <option value="Villa">Villa</option>
+                            <option value="Bungalow">Bungalow</option>
+                            <option value="Penthouse">Penthouse"</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="search_input_container">
+                        <label for="keyword">Location</label>
+                        <input type="text" class="search_input" placeholder="Location" id="keyword">
+                    </fieldset>
+                    <fieldset class="search_input_container">
+                        <label for="keyword"></label>
+                        <button class="search_form_btn">Find My Home</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section Ends here -->
+
+
+    <!-- Featured Properties start here -->
+    <section class="featured_properties_section" id="about">
+        <div class="featured_properties_container">
+            <div class="title_container">
+                <h5 class="subtitle">Featured Properties</h5>
+                <h2 class="title">Featured Properties Just for You!</h2>
+            </div>
+            <div class="content_container">
+                <div class="featured_properties_memu_container">
+                    <ul class="featured_properties_memu_list">
+                        <li><button class="active" data-tab="tab-1">View All</button></li>
+                        <li><button data-tab="tab-2">Apartment</button></li>
+                        <li><button data-tab="tab-3">Office</button></li>
+                        <li><button data-tab="tab-4">Villas</button></li>
+                        <li><button data-tab="tab-5">House</button></li>
+                    </ul>
+                </div>
+                <div class="featured_tab active" id="tab-1">
+                    <div class="featured_properties_content_container">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/home1.jpg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Modern Family Home</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:1,1501</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 51,26,000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/Downtown.webp" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Downtown Apartment</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:950</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 1,51,26,000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/home3.webp" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Luxury Villa</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:5</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:4</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:3,200</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 51,26,000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/home4.webp" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Cozy Bungalow</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:1,400</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 3,49,581</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/home5.jpg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Suburban Townhouse</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:2,000</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/home6.jpg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Charming Cottage</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:850</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="featured_tab" id="tab-2">
+                    <div class="featured_properties_content_container">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/Suburban Townhouse.jpg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Suburban Townhouse</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:2,000</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/Charming cottage.jpeg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Charming Cottage</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:850</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/spacious penthouse.webp" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Spacious Penthous</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:2,800</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/modern loft.jpg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Modern Loft</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:1</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:700</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/spacious penthouse.webp" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Spacious Penthous</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:2,800</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/modern loft.jpg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Modern Loft</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:1</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:700</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured_tab" id="tab-3">
+                    <div class="featured_properties_content_container">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/Suburban Townhouse.jpg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Suburban Townhouse</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:2,000</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/Charming cottage.jpeg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Charming Cottage</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:850</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/spacious penthouse.webp" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Spacious Penthous</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:2,800</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/modern loft.jpg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Modern Loft</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:1</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:700</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured_tab active" id="tab-4">
+                            <div class="featured_properties_content_container">
+                                <div class="product_card">
+                                    <div class="img_container">
+                                        <img src="./project/Images/home7.jpg" alt="product" class="product_img">
+                                    </div>
+                                    <div class="text_container">
+                                        <a href="">
+                                            <h3>Modern Family Home</h3>
+                                        </a>
+                                        <ul class="product_featured_list">
+                                            <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                            <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                            <li><i class="fa-solid fa-expand"></i> Sqft:1,1501</li>
+                                        </ul>
+                                        <div class="price_container">
+                                            <h5><i class="fa-solid fa-indian-rupee-sign"></i> 51,26,000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card">
+                                    <div class="img_container">
+                                        <img src="./project/Images/Downtown.webp" alt="product" class="product_img">
+                                    </div>
+                                    <div class="text_container">
+                                        <a href="">
+                                            <h3>Downtown Apartment</h3>
+                                        </a>
+                                        <ul class="product_featured_list">
+                                            <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                            <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                            <li><i class="fa-solid fa-expand"></i> Sqft:950</li>
+                                        </ul>
+                                        <div class="price_container">
+                                            <h5><i class="fa-solid fa-indian-rupee-sign"></i> 1,51,26,000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card">
+                                    <div class="img_container">
+                                        <img src="./project/Images/home3.webp" alt="product" class="product_img">
+                                    </div>
+                                    <div class="text_container">
+                                        <a href="">
+                                            <h3>Luxury Villa</h3>
+                                        </a>
+                                        <ul class="product_featured_list">
+                                            <li><i class="fa-solid fa-bed"></i> Beds:5</li>
+                                            <li><i class="fa-solid fa-bath"></i> Baths:4</li>
+                                            <li><i class="fa-solid fa-expand"></i> Sqft:3,200</li>
+                                        </ul>
+                                        <div class="price_container">
+                                            <h5><i class="fa-solid fa-indian-rupee-sign"></i> 51,26,000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card">
+                                    <div class="img_container">
+                                        <img src="./project/Images/bungalow3.jpg" alt="product" class="product_img">
+                                    </div>
+                                    <div class="text_container">
+                                        <a href="">
+                                            <h3>Cozy Bungalow</h3>
+                                        </a>
+                                        <ul class="product_featured_list">
+                                            <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                            <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                            <li><i class="fa-solid fa-expand"></i> Sqft:1,400</li>
+                                        </ul>
+                                        <div class="price_container">
+                                            <h5><i class="fa-solid fa-indian-rupee-sign"></i> 3,49,581</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="featured_tab active" id="tab-5">
+                                <div class="featured_properties_content_container">
+                                <div class="product_card">
+                                            <div class="img_container">
+                                                <img src="./project/Images/Downtown.webp" alt="product"
+                                                    class="product_img">
+                                            </div>
+                                            <div class="text_container">
+                                                <a href="">
+                                                    <h3>Downtown Apartment</h3>
+                                                </a>
+                                                <ul class="product_featured_list">
+                                                    <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                                    <li><i class="fa-solid fa-expand"></i> Sqft:950</li>
+                                                </ul>
+                                                <div class="price_container">
+                                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 1,51,26,000</h5>
+                                                </div>
+                                            </div>
+                                 </div>
+                               <div class="product_card">
+                            <div class="img_container">
+                                <img src="./project/Images/Suburban Townhouse.jpg" alt="product" class="product_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="">
+                                    <h3>Suburban Townhouse</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:2,000</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+            </div> -->
+            </div>
+    </section>
+    <!-- Featured Properties ends here -->
+
+    <!-- services section starts Here -->
+    <section class="services_section" id="services">
+        <div class="services_container">
+            <div class="title_container">
+                <h5 class="subtitle">Our Services</h5>
+                <h2 class="title">What We Offer</h2>
+            </div>
+            <div class="services_content_container">
+                <div class="services_row">
+                    <div class="services_col">
+                        <div class="img_container">
+                            <img src="./project/Images/buying1.webp" alt="service">
+                        </div>
+                    </div>
+                    <div class="services_col">
+                        <div class="text_container">
+                            <h4>Buy A New Home</h4>
+                            <p class="sub-desc">Simplify your home-buying journey with expert guidence.</p>
+                            <p class="desc">"Buying a new house is not just a purchase, it's an investment in your
+                                future.
+                                Every brick you own today builds your tomorrow."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_row">
+                    <div class="services_col">
+                        <div class="img_container">
+                            <img src="./project/Images/sale.jpg" alt="service">
+                        </div>
+                    </div>
+                    <div class="services_col">
+                        <div class="text_container">
+                            <h4>Sell A Home</h4>
+                            <p class="sub-desc">Get the best value for your property with our proven strategies</p>
+                            <p class="desc">"You are not just selling walls and windows — you’re passing on a home full
+                                of memories."</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_row">
+                    <div class="services_col">
+                        <div class="img_container">
+                            <img src="./project/Images/Rent.jpg" alt="service">
+                        </div>
+                    </div>
+                    <div class="services_col">
+                        <div class="text_container">
+                            <h4>Rent A Home</h4>
+                            <p class="sub-desc">Find rental properties that feel like home.</p>
+                            <p class="desc">"A rented house may not be yours forever,but it's still a place to create
+                                lasting memories."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services section ends Here -->
+
+    <!-- Cites section starts Here -->
+    <div class="cites_section">
+        <div class="cities_container">
+            <div class="title_container">
+                <h5 class="subtitle">Explore Cities</h5>
+                <h2 class="title">Discover the best Location to Call Home</h2>
+            </div>
+
+            <div class="cites_content_container">
+                <div class="swiper citiesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cites_card">
+                                <div class="img_container">
+                                    <img src="./project/Images/lighthouse.jpeg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Naperville</h4>
+                                    <p>300 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cites_card">
+                                <div class="img_container">
+                                    <img src="./project/Images/pembroke.jpg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Pembroke Pines</h4>
+                                    <p>150 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cites_card">
+                                <div class="img_container">
+                                    <img src="./project/Images/empire.jpg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Toledo</h4>
+                                    <p>250 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cites_card">
+                                <div class="img_container">
+                                    <img src="./project/Images/paris.webp" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Paris</h4>
+                                    <p>111 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cites_card">
+                                <div class="img_container">
+                                    <img src="./project/Images/miami.jpeg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Miami</h4>
+                                    <p>85 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cites_card">
+                                <div class="img_container">
+                                    <img src="./project/Images/austin.jpg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Austin</h4>
+                                    <p>14 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cites section ends Here -->
+
+
+                <!-- Top Properties start here -->
+                <section class="top_properties_section" id="properties">
+                    <div class="top_properties_container">
+                        <div class="title_container">
+                            <h5 class="subtitle">Top Properties</h5>
+                            <h2 class="title">Explore Our Top-Rated Listings</h2>
+                        </div>
+                        <div class="content_container">
+
+                            <div class="top_properties_content_container">
+                                <div class="product_card">
+                                    <div class="img_container">
+                                        <img src="./project/Images/home7.jpg" alt="product" class="product_img">
+                                    </div>
+                                    <div class="text_container">
+                                        <a href="">
+                                            <h3>Modern Family Home</h3>
+                                        </a>
+                                        <ul class="product_featured_list">
+                                            <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                            <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                            <li><i class="fa-solid fa-expand"></i> Sqft:1,1501</li>
+                                        </ul>
+                                        <div class="price_container">
+                                            <h5><i class="fa-solid fa-indian-rupee-sign"></i> 51,26,000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card">
+                                    <div class="img_container">
+                                        <img src="./project/Images/Downtown.webp" alt="product" class="product_img">
+                                    </div>
+                                    <div class="text_container">
+                                        <a href="">
+                                            <h3>Downtown Apartment</h3>
+                                        </a>
+                                        <ul class="product_featured_list">
+                                            <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                            <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                            <li><i class="fa-solid fa-expand"></i> Sqft:950</li>
+                                        </ul>
+                                        <div class="price_container">
+                                            <h5><i class="fa-solid fa-indian-rupee-sign"></i> 1,51,26,000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card">
+                                    <div class="img_container">
+                                        <img src="./project/Images/home3.webp" alt="product" class="product_img">
+                                    </div>
+                                    <div class="text_container">
+                                        <a href="">
+                                            <h3>Luxury Villa</h3>
+                                        </a>
+                                        <ul class="product_featured_list">
+                                            <li><i class="fa-solid fa-bed"></i> Beds:5</li>
+                                            <li><i class="fa-solid fa-bath"></i> Baths:4</li>
+                                            <li><i class="fa-solid fa-expand"></i> Sqft:3,200</li>
+                                        </ul>
+                                        <div class="price_container">
+                                            <h5><i class="fa-solid fa-indian-rupee-sign"></i> 51,26,000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card">
+                                    <div class="img_container">
+                                        <img src="./project/Images/home4.webp" alt="product" class="product_img">
+                                    </div>
+                                    <div class="text_container">
+                                        <a href="">
+                                            <h3>Cozy Bungalow</h3>
+                                        </a>
+                                        <ul class="product_featured_list">
+                                            <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                            <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                            <li><i class="fa-solid fa-expand"></i> Sqft:1,400</li>
+                                        </ul>
+                                        <div class="price_container">
+                                            <h5><i class="fa-solid fa-indian-rupee-sign"></i> 3,49,581</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card">
+                                    <div class="img_container">
+                                        <img src="./project/Images/Suburban Townhouse.jpg" alt="product"
+                                            class="product_img">
+                                    </div>
+                                    <div class="text_container">
+                                        <a href="">
+                                            <h3>Suburban Townhouse</h3>
+                                        </a>
+                                        <ul class="product_featured_list">
+                                            <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                            <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                            <li><i class="fa-solid fa-expand"></i> Sqft:2,000</li>
+                                        </ul>
+                                        <div class="price_container">
+                                            <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_card">
+                                    <div class="img_container">
+                                        <img src="./project/Images/Charming cottage.jpeg" alt="product"
+                                            class="product_img">
+                                    </div>
+                                    <div class="text_container">
+                                        <a href="">
+                                            <h3>Charming Cottage</h3>
+                                        </a>
+                                        <ul class="product_featured_list">
+                                            <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                            <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                            <li><i class="fa-solid fa-expand"></i> Sqft:850</li>
+                                        </ul>
+                                        <div class="price_container">
+                                            <h5><i class="fa-solid fa-indian-rupee-sign"></i> 5126000</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+                <!-- Top Properties ends here -->
+
+                <!-- About Section Starts Here -->
+                <section class="about_section">
+                    <div class="about_container">
+                        <div class="title_container">
+                            <h5 class="subtitle">About Us</h5>
+                            <h2 class="title">Your Trusted Partner in Real Estate</h2>
+                        </div>
+                        <div class="content_container">
+                            <div class="about_col">
+                                <div class="img_container">
+                                    <img src="./project/Images/About Us/about.jpg" alt="about">
+                                </div>
+                            </div>
+                            <div class="about_col">
+                                <div class="text_container">
+                                    <p class="desc">At Bento Works,we are dedicated to helping you find the perfect
+                                        place to call home.With years of experience in the real estate market,our team
+                                        specializes in buying,selling,and renting properties tailored to meet your
+                                        unique needs.We pride ourselves on delivering exceptional
+                                        service,transparency,and expert guidance throughout your real estate journey.
+                                    </p>
+                                    <p class="content">whether you're searching for your dream home,looking to sell at
+                                        the best value,or seeking an ideal rental,we are here to make the process
+                                        seamiess and stress-free.Let us turn your property goals into reality.</p>
+                                    <blockquote>"Your Home.Your Future.Our Commitment."</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!-- About Section Ends Here -->
+
+                <!-- Testimonial Section Starts Here -->
+                <section class="testimonial_section">
+                    <div class="testimonial_container">
+                        <div class="title_container">
+                            <h5 class="subtitle">Our Testimonials</h5>
+                            <h2 class="title">What Our Clients Say</h2>
+                        </div>
+                        <div class="content_container">
+                            <div class="swiper TestimonialSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="testimonial_card">
+                                            <div class="top">
+                                                <i class="fa-solid fa-quote-right"></i>
+                                            </div>
+                                            <div class="center">
+                                                <h5>"We found our dream home within weeks.The team was amazing!"</h5>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="bottom_row">
+                                                    <div class="bottom_col">
+                                                        <div class="img_container">
+                                                            <img src="./project/Images/clients/client1.jpg"
+                                                                alt="reviewer">
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom_col">
+                                                        <h5>Emily & John</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial_card">
+                                            <div class="top">
+                                                <i class="fa-solid fa-quote-right"></i>
+                                            </div>
+                                            <div class="center">
+                                                <h5>"Selling my property was seamless thanks to their expertise."</h5>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="bottom_row">
+                                                    <div class="bottom_col">
+                                                        <div class="img_container">
+                                                            <img src="./project/Images/clients/client2.jpg"
+                                                                alt="reviewer">
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom_col">
+                                                        <h5>Milk D.</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="testimonial_card">
+                                            <div class="top">
+                                                <i class="fa-solid fa-quote-right"></i>
+                                            </div>
+                                            <div class="center">
+                                                <h5>"I found the perfect rental property in no time!"</h5>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="bottom_row">
+                                                    <div class="bottom_col">
+                                                        <div class="img_container">
+                                                            <img src="./project/Images/clients/client4.jpg"alt="reviewer">
+                                                        </div>
+                                                    </div>
+                                                    <div class="bottom_col">
+                                                        <h5>Sophia R.</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Testimonial Section Ends Here -->
+
+                <!-- Contact section Starts Here -->
+                <section class="contact_section"id="contact">
+                    <div class="contact_container">
+                        <div class="contact_col">
+                            <div class="title_container">
+                                <h5 class="subtitle">Contact Us</h5>
+                                <h2 class="title">Get in Touch with Us Today!</h2>
+                            </div>
+                            <div class="contact_form_container">
+                                <form action="#">
+                                    <fieldset class="input_row">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" placeholder="Enter Your Name...">
+                                    </fieldset>
+                                    <fieldset class="input_row">
+                                        <label for="email">Email</label>
+                                        <input type="text" name="Email" placeholder="Enter Your Email...">
+                                    </fieldset>
+                                    <fieldset class="input_row">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="text" name="Phone" placeholder="Enter Your Phone Number..">
+                                    </fieldset>
+                                    <fieldset class="input_row">
+                                        <label for="message">Message</label>
+                                        <textarea name="Message" placeholder="Enter Your Message.."></textarea>
+                                    </fieldset>
+                                    <button class="contact_submit_btn" type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="contact_col">
+                            <div class="title_container">
+                                <h5 class="subtitle">More Info</h5>
+                                <h2 class="title">Additional Info About Us</h2>
+                            </div>
+                            <div class="contact_info_container">
+                                <ul class="contact_info_list">
+                                    <li>
+                                        <div class="cnt_icon_container">
+                                            <i class="fa-solid fa-phone"></i>
+                                        </div>
+                                        <div class="cnt_data_container">
+                                            <h5>+1 123-456-7890</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cnt_icon_container">
+                                            <i class="fa-solid fa-envelope"></i>
+                                        </div>
+                                        <div class="cnt_data_container">
+                                            <h5>contact@yourrealestate.com</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cnt_icon_container">
+                                            <i class="fa-solid fa-location-dot"></i>
+                                        </div>
+                                        <div class="cnt_data_container">
+                                            <h5>123 Real Estate Blvd,City,State,ZIP</h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1686.1133331620517!2d-55.8231902988166!3d-9.96711035891061!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93aa18a61c501bb9%3A0xd108ab4af95d6f2a!2sCarlinda%2C%20State%20of%20Mato%20Grosso%2C%2078587-000%2C%20Brazil!5e1!3m2!1sen!2sin!4v1755142393656!5m2!1sen!2sin"
+                                    class="map" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Contact section Starts Here -->
+
+
+                <!-- Meet Our Team Section Starts Here-->
+                <section class="team_section">
+                    <div class="team_container">
+                        <div class="title_container">
+                            <h5 class="subtitle">Our Team</h5>
+                            <h2 class="title">Meet the Experts Behind Your Real Estate journey</h2>
+                        </div>
+                        <div class="content_container">
+                            <div class="team_row">
+                                <div class="team_col">
+                                    <div class="img_container">
+                                        <img src="./project/Images/Agents/agents1.webp" alt="team">
+                                    </div>
+                                    <div class="text_container">
+                                        <h4>Stella</h4>
+                                        <p>Founder & Real Estate Specialist</p>
+                                    </div>
+                                </div>
+                                <div class="team_col">
+                                    <div class="img_container">
+                                        <img src="./project/Images/Agents/agents2.jpg" alt="team">
+                                    </div>
+                                    <div class="text_container">
+                                        <h4>Jane Doe</h4>
+                                        <p>Cilent Relations Manager</p>
+                                    </div>
+                                </div>
+                                <div class="team_col">
+                                    <div class="img_container">
+                                        <img src="./project/Images/Agents/agents3.webp" alt="team">
+                                    </div>
+                                    <div class="text_container">
+                                        <h4>James Brown</h4>
+                                        <p>Property Consultant</p>
+                                    </div>
+                                </div>
+                                <div class="team_col">
+                                    <div class="img_container">
+                                        <img src="./project/Images/Agents/agents4.webp" alt="team">
+                                    </div>
+                                    <div class="text_container">
+                                        <h4>Lisa White</h4>
+                                        <p>Marketing Expert</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <!-- Meet Our Team Section Ends Here-->
+
+                <!-- Brand Section Starts Here -->
+                <section class="brand_section">
+                    <div class="brand_container">
+                        <div class="title_container">
+                            <h2 class="title">Trusted By Over 150+ Major Companies</h2>
+                        </div>
+                        <div class="content_container">
+                            <div class="swiper brandSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img_container">
+                                            <img src="./project/Images/company/1.svg" alt="client">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img_container">
+                                            <img src="./project/Images/company/2.svg" alt="client">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img_container">
+                                            <img src="./project/Images/company/3.svg" alt="client">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img_container">
+                                            <img src="./project/Images/company/4.svg" alt="client">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img_container">
+                                            <img src="./project/Images/company/5.svg" alt="client">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img_container">
+                                            <img src="./project/Images/company/6.svg" alt="client">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+ <!-- Brand Section Ends Here -->
+
+<!-- Footer Section Starts Here-->
+<footer>
+    <div class="footer_container">
+           <nav class="footer_nav_container">
+                    <ul class="nav_list_container">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Properties</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="copyright_container">
+                    <p>2025 <i class="fa-regular fa-copyright"></i> Raghu Work,All rights reserved.</p>
+                </div>
+    </div>
+</footer>
+<!-- Footer Section Ends Here-->  
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/all.min.js"
+      integrity="sha512-gBYquPLlR76UWqCwD06/xwal4so02RjIR0oyG1TIhSGwmBTRrIkQbaPehPF8iwuY9jFikDHMGEelt0DtY7jtvQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/fontawesome.min.js"
+     integrity="sha512-QPVPxxncZwuT317gBTFFlXTykloTFA4jnd5j/aFco+Nd/0eqFsp/zGdhjuwkRoiPMsjvkjHkp0DGRPBxF+d3Pw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="./project/js/script.js"></script>
+</body>
+
+
+</html>
